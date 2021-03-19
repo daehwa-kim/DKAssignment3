@@ -1,0 +1,322 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	background-color:#191919;
+	background-image: url(../images/header_bg3.jpg);
+	background-repeat: repeat-x;
+	background-size: auto 300px;	
+	background-position: 0 50px;
+	background-attachment: fixed;
+	
+	width:1220px;
+	margin: 0 50px;
+}
+
+header {
+	height: 270px;	
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#ffffff; /* 0196e3 */
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:6em;
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	padding:0;
+	margin-top: 35px;
+	margin-bottom: 10px;
+	font-weight:lighter;
+	text-transform:uppercase;
+	text-shadow:0 0 12px #00FFFF;
+}
+
+h3{
+	/* The slogan text */
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	font-size:1.5em;
+	font-weight:bold;	
+	text-transform:uppercase;
+	margin: 10px 5px;
+	text-shadow:0 0 8px #00FF00;
+}
+
+h2{
+	font-size:3em;
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	font-weight:lighter;
+	letter-spacing:0.01em;
+	text-shadow:0 1px 3px green;
+}
+.go_up {
+	background-color: rgba(255,255,255,0.2);
+	font-size:80%;
+	float: right; 
+	margin-right: 2px;  
+	padding: 2px 6px 6px 12px;
+	border: 1px solid white;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:100%;
+	text-align: center;
+	text-shadow:0 0 3px white;
+}
+.go_up:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.go_up:active {
+	background-color: rgba(255,255,255,0.8);
+}
+p{
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size:1.2em;
+	letter-spacing:0.01em;
+}
+.pbold{
+	font-size:1.4em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#77CC77;
+	margin:3em 0;
+	overflow:hidden;
+
+	-moz-box-shadow:0px 0px 30px #77CC77;
+	-webkit-box-shadow:0px 0px 30px #77CC77;
+	box-shadow:0px 0px 10px #77CCCC;
+}
+
+article .line{
+	/* The dividing line inside of the article is lighter: */
+	background-color:#ffffff;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+aside {
+	float: left;
+	clear: left;
+	background:repeat-x 50% 50% rgba(200,255,255,0.3);
+	padding-top: 10px;
+	width:240px;
+	height: 300px;
+	position: fixed;
+	top: 305px;
+	overflow: hidden;
+	
+	
+	border:2px solid #FFFFFF;
+	border-right: 0px;
+
+	-moz-box-shadow:0px 0px 30px #77CC77;
+	-webkit-box-shadow:0px 0px 30px #77CC77;
+	box-shadow:0px 0px 30px #77CCCC;
+}
+
+aside:hover {
+	background:repeat-x 50% 50% rgba(200,255,255,0.4);
+}
+
+main {
+	float: right;
+	padding: 20px;
+	clear: right;
+	width: 936px;
+	background-color:rgba(255,255,255,0.1);
+	border-radius:0px 20px 20px 0px;
+	
+	background-color:rgba(100,145,100,0.3);
+	-moz-box-shadow:6px 6px 0px #224422;
+	-webkit-box-shadow:6px 6px 0px #224422;
+	/*box-shadow:6px 6px 0px #224422;*/
+	box-shadow:0px 0px 30px #77CC77;
+	border:2px solid #FFFFFF;
+	}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	/* display:inline; */
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#ffffff;
+	display:block;
+	
+	font-size:1.4em;
+	font-weight:bold;
+	padding:10px 10px;
+	padding-left:15px;
+	text-shadow:0 1px 1px black;
+	text-transform:uppercase;	
+}
+
+nav ul li a:hover{
+	color: black;	
+	text-shadow:0 1px 1px white;
+	text-decoration:none;
+	background-color:rgba(255,255,255,0.5);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+aside, article{
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+figure {
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:50%;
+}
+	
+
+aside {
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:20px 0px 0px 20px;
+}
+
+/* Article styles: */
+
+
+article{
+	background-color:rgba(75,105,75,0.85);
+	margin:0 0 3em 0;
+	padding:20px;
+	
+	
+	text-shadow:1px 2px 2px black;
+	letter-spacing:0.05em;
+}
+
+article:hover{
+	background-color:rgba(80,120,80,0.93);
+}
+
+figure{
+	border:1px solid #ffffff;
+	float:right;
+	height:300px;
+	margin-left:30px;
+	margin-right:10px;
+	overflow:hidden;
+	width:300px;
+	-moz-box-shadow:0px 0px 8px #336633;
+	-webkit-box-shadow:0px 0px 8px #336633;
+	box-shadow:0px 0px 8px #224422;
+}
+
+figure:hover{
+	-moz-box-shadow:0px 0px 8px #ffffff;
+	-webkit-box-shadow:0px 0px 8px #ffffff;
+	box-shadow:0px 0px 8px #ffffff;
+}
+figure:active{
+	margin-top:17px;
+}
+
+/* Footer styling: */
+
+footer{
+	padding-top:40px;
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+	clear: both;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
